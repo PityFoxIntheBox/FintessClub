@@ -11,8 +11,122 @@
             p{font-size: 22pt; color: white; font-family: Inter;}
             body{margin: 0}
             a{font-size: 24pt; text-decoration: none; font-family: Inter;}
+            button{font-size: 24px; font-family: Inter; height:60px; width:212px; background-color: #C0F000;
+            border: 0; border-radius: 3px;}
+            main{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            font{
+                font-size: 24pt; 
+                text-decoration: none; 
+                font-family: Inter;
+            }
             .table1{
                 height: 70px;
+            }
+            .vk{
+                margin-left: 78px;
+                text-align: center;
+                position: absolute;
+            }
+            .tg{
+                margin-left: 187px;
+                text-align: center;
+                position: absolute;
+            }
+            .list{
+                position: absolute;
+                text-align: center;
+                margin-left: 1100px;
+                vertical-align: middle;
+                display: flex;
+                flex-flow: row;
+                -webkit-box-orient: horizontal;
+                align-items: center;
+            }
+            .botpan{
+                margin: 0;
+                margin-top: 50px;
+                display: flex;
+                flex-flow: row;
+                -webkit-box-orient: horizontal;
+                height: 90px;
+                align-items: center;
+                vertical-align: middle;
+                position: sticky;
+                bottom: 0px;
+                background-color: #C0F000;
+                 
+            }
+            .centerimg{
+                position: relative;
+                justify-content: center;
+                width: 100%;
+            }
+            .but1{
+                position: absolute;
+                margin-left: 750px;
+                margin-top: 690px;
+                
+            }
+            .leftar{
+                position: absolute;
+                margin-left: 30px;
+                margin-top: 360px;
+            }
+            .rightar{
+                position: absolute;
+                justify-content: right;
+                margin-left: 1500px;
+                margin-top: 360px;
+            }
+            .stock{
+                margin-top: 50px;
+                align-items: center;
+                text-align: center;
+            }
+            .stockimgs{
+                margin-top: 50px;
+                display: flex;
+                flex-flow: row;
+                -webkit-box-orient: horizontal;
+                vertical-align: middle;
+            }
+            .stimg1{
+                position: relative;
+                margin-left: 250px;
+            }
+            .stimg2{
+                position: relative;
+                margin-left: 100px;
+            }
+            .stimg3{
+                position: relative;
+                margin-left: 100px;
+            }
+            .menu{
+                width: 100%;
+                height: 100px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                vertical-align: middle;
+                display: flex;
+                flex-flow: row;
+                -webkit-box-orient: horizontal;
+                vertical-align: middle;
+                text-indent: 50px;
+            }
+            .but2{
+                text-align: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+            .topbut{
+                position: absolute;
+                margin-left: 900px;
+	            bottom: 45px;
             }
         </style>
     </head>
@@ -31,7 +145,7 @@
                     </td>
                     <td>
                         <table align="right">
-                            <td valign="middle"><p><img src="account_circle.png"></p></td>
+                            <td valign="middle"><img src="account_circle.png"></td>
                             <td valign="middle"><a style="color:white" href="#">Личный кабинет</a></td>
                         </table>
                     </td>
@@ -39,36 +153,58 @@
             </table>
             </div>
           </header>
-        <nav >
-            <table width="100%" cellspacing="20px" align="right">
-                <tr>
-                    <td></td>
-                    <td><a style="color:black" href="#">КЛУБЫ</a></td>
-                    <td><a style="color:black" href="#">ФИТНЕС</a></td>
-                    <td><a style="color:black" href="#">АКЦИИ</a></td>
-                    <td><a style="color:black" href="#">РАСПИСАНИЕ</a></td>
-                    <td><a style="color:black" href="#">ЦЕНЫ</a></td>
-                    <td><a style="color:black" href="#">РАСЧЁТ СТОИМОСТИ</a></td>
-                    <td><a href="#"><img src="menu.png"></a></td>
-                </tr>
-            </table>
-        </nav>
-        <img src="cat.png" width="100%" height="773px">
-        <table cellspacing="20px" align="center" height="87px">
-            <tr align="center">
-                <td valign="middle" align="left">
-                    <table align="left" cellspacing="20px">
-                        <td><a href="#"><img src="vk.png"></a></td>
-                        <td><a href="#"><img src="tg.png"></a></td>
-                    </table>
-                </td>
-                <td valign="middle" align="right">
-                    <table align="right" cellspacing="20px">
-                        <td><a href="#"><img src="list.png"></a></td>
-                        <td><a style="color:black" href="#">Запись на занятие</a></td>
-                    </table>
-                </td>
-            </tr>
-        </table>
+        <main>
+            <div class="menu">
+                    <a style="color:black" href="#">КЛУБЫ</a>
+                    <a style="color:black" href="#">ФИТНЕС</a>
+                    <a style="color:black" href="#st1">АКЦИИ</a>
+                    <a style="color:black" href="#">РАСПИСАНИЕ</a>
+                    <a style="color:black" href="#">ЦЕНЫ </a>
+                    <a style="color:black" href="#">РАСЧЁТ СТОИМОСТИ</a>
+                    <a href="#"><img src="menu.png"></a>
+            </div>
+        <div class="centerimg">
+            <div class="rightar">
+                <img src="right.png">
+            </div>
+            <div class="leftar">
+                <img src="left.png">
+            </div>
+            <div class="but1">
+                <button>ПОДРОБНЕЕ</button>
+            </div>
+            <img src="cat.png" width="100%" height="773px">
+        </div>
+        <div class="stock" id="st1">
+            <font>АКЦИИ</font>
+            <div class="stockimgs">
+            <div class="stimg1">
+                <img height="300" width="300" src="cry.jpg">
+            </div>
+            <div class="stimg2">
+                <img height="300" width="300" src="stronkcat1.jpg">
+            </div>
+            <div class="stimg3">
+                <img height="300" width="300" src="stronkcat2.jpg">
+            </div>
+            </div>
+        </div>
+        <div class="but2">
+            <button>ВСЕ АКЦИИ</button>
+        </div>
+        <a href="#" title="Вернуться к началу страницы">Вверх</a>
+        <div class="botpan">
+            <div class="vk">
+            <a href="#"><img src="vk.png"></a>
+            </div>
+            <div class="tg">
+            <a href="#"><img src="tg.png"></a>
+            </div>
+            <div class="list">
+            <a href="#"><img src="list.png"></a>
+            <a style="color:black" href6="#">Запись на занятие</a>
+            </div>
+        </div>
+    </main>
     </body>
 </html>
